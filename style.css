@@ -1,0 +1,69 @@
+:root {
+  --main-color: #14480c;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: linear-gradient(130deg, #4164ff, #aaaaaa);
+  background-color: #373737;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 200px max-content;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--main-color);
+  background-color: #fff;
+}
+.start-section {
+  display: grid;
+  place-items: center;
+}
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+
+  outline: 5px solid var(--main-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-section h3 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.time-list {
+  display: flex;
+  column-gap: 20px;
+}
+.square {
+  position: absolute;
+  cursor: pointer;
+}
+.score {
+  font-size: 2rem;
+}
+.score-number {
+  color: var(--main-color);
+}
